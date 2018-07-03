@@ -18,9 +18,6 @@ def value_iteration(iterations, gamma):
 			vprobs = [probs[j][s]*(-1 + gamma*vold[j]) for j in neighbours[s]]
 			vnew[s] = max(vprobs)
 
-	for i in range(4):
-		print(vnew[i*4:i*4 + 4])
-
 	#define policy
 	policy = np.zeros(16)
 	for s in range(1,16):
