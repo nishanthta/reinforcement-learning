@@ -15,7 +15,7 @@ def value_iteration(iterations, gamma):
 		delta = 0
 
 		for s in range(1,16):
-			vprobs = [probs[j][s]*(-1 + gamma*vold[s]) for j in neighbours[s]]
+			vprobs = [probs[j][s]*(-1 + gamma*vold[j]) for j in neighbours[s]]
 			vnew[s] = max(vprobs)
 
 	for i in range(4):
