@@ -1,3 +1,3 @@
 # reinforcement-learning
 
-A few RL algorithms I implemented while taking up David Silver's course
+Code store for my RL stuff
